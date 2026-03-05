@@ -1,0 +1,8 @@
+# Phase 1 - MVP
+streamlit>=1.28.0
+pandas>=2.0.0
+requests>=2.31.0
+
+# 스크래핑 시 추가 (Phase 2+)
+# beautifulsoup4>=4.12.0
+# lxml>=4.9.0

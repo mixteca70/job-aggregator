@@ -1,0 +1,29 @@
+# PR 시 pytest 실행 (tests/ 폴더 존재 시)
+name: Test
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run tests
+        run: |
+          if [ -d tests ]; then pytest tests/ -v; else echo "tests/ not found - skipping"; fi
