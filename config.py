@@ -17,8 +17,14 @@ KEYWORDS = [
 
 DB_PATH = str(Path(__file__).parent / "jobs.db")
 
-# MVP 스크래핑 대상 (API 불필요)
+# MVP 스크래핑 대상 (API 불필요) - 1차 수집 범위
 SWUNIV_URL = "http://www.swuniv.kr/59/"
+CODEIT_RECRUIT_URL = "https://careers.codeit.com/en/recruit"
+LIKELION_APPLY_URL = "https://likelion.career.greetinghr.com/ko/apply"
+MODULABS_APPLY_URL = "https://modulabs.career.greetinghr.com/en/apply"
+FASTCAMPUS_B2B_URL = "https://b2b.fastcampus.co.kr/b2b_instructor_apply"
+ELICE_JOBS_URL = "https://elice.careers/jobs"
+CAREERLY_URL = "https://careerly.co.kr"
 
 # Phase 2 API (승인 후 사용)
 SARAMIN_API_URL = "https://oapi.saramin.co.kr/job-search"
