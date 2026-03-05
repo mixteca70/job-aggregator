@@ -15,8 +15,13 @@ KEYWORDS = [
     "딥러닝 강사",
 ]
 
-SARAMIN_API_URL = "https://oapi.saramin.co.kr/job-search"
 DB_PATH = str(Path(__file__).parent / "jobs.db")
+
+# MVP 스크래핑 대상 (API 불필요)
+SWUNIV_URL = "http://www.swuniv.kr/59/"
+
+# Phase 2 API (승인 후 사용)
+SARAMIN_API_URL = "https://oapi.saramin.co.kr/job-search"
 
 
 def get_api_key() -> str | None:

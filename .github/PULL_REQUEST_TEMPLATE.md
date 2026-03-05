@@ -5,7 +5,7 @@
 - closes #(이슈 번호)
 
 ## 테스트
-- [ ] GUIDE.md 기준 단계별 테스트 통과
+- [ ] README.md 기준 단계별 테스트 통과
 - [ ] 로컬에서 `streamlit run app.py` 동작 확인
 
 ## 체크리스트
